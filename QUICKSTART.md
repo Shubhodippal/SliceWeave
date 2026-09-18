@@ -1,4 +1,4 @@
-# Quick start on the new machine
+# SliceWeave — Quick start on the new machine
 
 ## 1. Clone and set up
 

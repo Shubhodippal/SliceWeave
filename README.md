@@ -1,8 +1,10 @@
-# ParamRAG
+# SliceWeave
 
 Fine-Grained Retrieval-Augmented Parameter Activation for Dense Language Models.
 
-This repository implements the research plan from `ParamRAG_Detailed_Research_Blueprint.md`.
+This repository implements the research plan from `ParamRAG_Detailed_Research_Blueprint.md`
+(the blueprint's working title "ParamRAG" refers to the same method; the project
+codename is **SliceWeave**).
 
 ## Research order
 
