@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Model caches / big data
+.hf_cache/
+*.safetensors
+*.gguf
+
+# Experiment outputs (regenerable)
+results/csv/*
+results/plots/*
+results/logs/*
+!results/csv/.gitkeep
+!results/plots/.gitkeep
+!results/logs/.gitkeep
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store

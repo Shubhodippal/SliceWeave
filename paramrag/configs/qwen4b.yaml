@@ -1,0 +1,19 @@
+# Blueprint §7: per-model configs used by the experiment drivers.
+# Values are auto-discovered at runtime when absent; these are hints/documentation.
+qwen4b:
+  hf_id: "Qwen/Qwen3-4B"
+  device: "auto"
+  dtype: "bfloat16"
+  micro_expert_size: 128
+
+qwen9b:
+  hf_id: "Qwen/Qwen3-9B"   # placeholder; use any available ~9B Qwen-family model
+  device: "auto"
+  dtype: "bfloat16"
+  micro_expert_size: 128
+
+qwen27b:
+  hf_id: "Qwen/Qwen3.8-27B" # placeholder per blueprint
+  device: "auto"
+  dtype: "bfloat16"
+  micro_expert_size: 128
