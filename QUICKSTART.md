@@ -4,7 +4,7 @@
 
 ```powershell
 git clone <repo-url>
-cd paramrag
+cd SliceWeave
 py -3.11 -m venv .venv
 .venv\Scripts\activate
 python -m pip install --upgrade pip

@@ -2,7 +2,7 @@
 
 Fine-Grained Retrieval-Augmented Parameter Activation for Dense Language Models.
 
-This repository implements the research plan from `../ParamRAG_Detailed_Research_Blueprint.md`.
+This repository implements the research plan from `ParamRAG_Detailed_Research_Blueprint.md`.
 
 ## Research order
 
