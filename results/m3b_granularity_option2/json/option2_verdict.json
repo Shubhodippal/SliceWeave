@@ -1,0 +1,178 @@
+{
+  "run_stamp": "2026-09-20 13:51",
+  "arm2a_best_frac_specialized": 0.0,
+  "arm2b_best_frac_MI_explained": 0.2627999889746252,
+  "arm2b_best_p_value": 1.0,
+  "arm2a": [
+    {
+      "layer": "model.layers.7",
+      "k": 304,
+      "meanH": 1.877628063075306,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 32,
+      "tokens_per_expert": 2.51
+    },
+    {
+      "layer": "model.layers.7",
+      "k": 608,
+      "meanH": 1.880425695024701,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 16,
+      "tokens_per_expert": 1.25
+    },
+    {
+      "layer": "model.layers.7",
+      "k": 1216,
+      "meanH": 1.8814873233234326,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 8,
+      "tokens_per_expert": 0.63
+    },
+    {
+      "layer": "model.layers.7",
+      "k": 2432,
+      "meanH": 1.8821029172460912,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 4,
+      "tokens_per_expert": 0.31
+    },
+    {
+      "layer": "model.layers.18",
+      "k": 304,
+      "meanH": 1.8736647775529713,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 32,
+      "tokens_per_expert": 2.51
+    },
+    {
+      "layer": "model.layers.18",
+      "k": 608,
+      "meanH": 1.8736486557536678,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 16,
+      "tokens_per_expert": 1.25
+    },
+    {
+      "layer": "model.layers.18",
+      "k": 1216,
+      "meanH": 1.875070506355964,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 8,
+      "tokens_per_expert": 0.63
+    },
+    {
+      "layer": "model.layers.18",
+      "k": 2432,
+      "meanH": 1.8775228008032125,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 4,
+      "tokens_per_expert": 0.31
+    },
+    {
+      "layer": "model.layers.29",
+      "k": 304,
+      "meanH": 1.8586989197278398,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 32,
+      "tokens_per_expert": 2.51
+    },
+    {
+      "layer": "model.layers.29",
+      "k": 608,
+      "meanH": 1.8614903096426167,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 16,
+      "tokens_per_expert": 1.25
+    },
+    {
+      "layer": "model.layers.29",
+      "k": 1216,
+      "meanH": 1.8669249095605986,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 8,
+      "tokens_per_expert": 0.63
+    },
+    {
+      "layer": "model.layers.29",
+      "k": 2432,
+      "meanH": 1.871917290961642,
+      "frac_specialized": 0.0,
+      "neurons_per_expert": 4,
+      "tokens_per_expert": 0.31
+    }
+  ],
+  "arm2b": [
+    {
+      "layer": "model.layers.7",
+      "k": 15,
+      "MI_bits": 0.6096595533749907,
+      "task_entropy_bits": 3.7975682105856663,
+      "frac_MI_explained": 0.16053946093070126,
+      "p_value": 1.0
+    },
+    {
+      "layer": "model.layers.7",
+      "k": 40,
+      "MI_bits": 0.7722857604169974,
+      "task_entropy_bits": 3.7975682105856663,
+      "frac_MI_explained": 0.20336323604781134,
+      "p_value": 1.0
+    },
+    {
+      "layer": "model.layers.7",
+      "k": 76,
+      "MI_bits": 0.9980008838723002,
+      "task_entropy_bits": 3.7975682105856663,
+      "frac_MI_explained": 0.2627999889746252,
+      "p_value": 1.0
+    },
+    {
+      "layer": "model.layers.18",
+      "k": 15,
+      "MI_bits": 0.7781390182524257,
+      "task_entropy_bits": 3.7975682105856663,
+      "frac_MI_explained": 0.20490455341483385,
+      "p_value": 1.0
+    },
+    {
+      "layer": "model.layers.18",
+      "k": 40,
+      "MI_bits": 0.8321311089145834,
+      "task_entropy_bits": 3.7975682105856663,
+      "frac_MI_explained": 0.21912209676577502,
+      "p_value": 1.0
+    },
+    {
+      "layer": "model.layers.18",
+      "k": 76,
+      "MI_bits": 0.9980008838723002,
+      "task_entropy_bits": 3.7975682105856663,
+      "frac_MI_explained": 0.2627999889746252,
+      "p_value": 1.0
+    },
+    {
+      "layer": "model.layers.29",
+      "k": 15,
+      "MI_bits": 0.6144783952208607,
+      "task_entropy_bits": 3.7975682105856663,
+      "frac_MI_explained": 0.16180838924973384,
+      "p_value": 1.0
+    },
+    {
+      "layer": "model.layers.29",
+      "k": 40,
+      "MI_bits": 0.8182428706451847,
+      "task_entropy_bits": 3.7975682105856663,
+      "frac_MI_explained": 0.21546495685432182,
+      "p_value": 1.0
+    },
+    {
+      "layer": "model.layers.29",
+      "k": 76,
+      "MI_bits": 0.9980008838723002,
+      "task_entropy_bits": 3.7975682105856663,
+      "frac_MI_explained": 0.2627999889746252,
+      "p_value": 1.0
+    }
+  ]
+}

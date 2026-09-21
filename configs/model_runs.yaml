@@ -1,0 +1,18 @@
+# Notebook-first model registry for cross-model SliceWeave studies.
+# Each model writes only to its own sibling bundle; do not mix raw artifacts.
+
+qwen3_8b:
+  hf_id: "Qwen/Qwen3-8B"
+  bundle_dir: "Qwen3-8B_Results"
+  dtype: "bfloat16"
+  group_size: 128
+  preferred_host: "local with GPU+RAM offload, or a larger GPU"
+  notebook: "notebooks/qwen3_model_study.ipynb"
+
+qwen3_14b:
+  hf_id: "Qwen/Qwen3-14B"
+  bundle_dir: "Qwen3-14B_Results"
+  dtype: "bfloat16"
+  group_size: 128
+  preferred_host: "Kaggle or another >= 24 GiB GPU environment recommended"
+  notebook: "notebooks/qwen3_model_study.ipynb"

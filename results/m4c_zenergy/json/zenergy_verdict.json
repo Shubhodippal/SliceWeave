@@ -1,0 +1,73 @@
+{
+  "milestone": "M4c z-energy autopsy",
+  "date": "2026-09-20T18:12:11",
+  "mechanism": "rank 128-neuron blocks by mean z^2 AFTER gate/up; skip low-energy blocks in down_proj only (gate/up must run)",
+  "quality": {
+    "cosine_at_030": {
+      "model.layers.8": {
+        "z_energy": 0.9998,
+        "oracle": 0.9998,
+        "random": 0.9996
+      },
+      "model.layers.18": {
+        "z_energy": 0.9998,
+        "oracle": 0.9998,
+        "random": 0.9994
+      }
+    },
+    "z_energy_matches_oracle_at_030": {
+      "model.layers.8": true,
+      "model.layers.18": true
+    },
+    "z_energy_beats_random_at_030": {
+      "model.layers.8": true,
+      "model.layers.18": true
+    }
+  },
+  "wall_clock": {
+    "dense_ms": 1.433,
+    "batch": 64,
+    "per_retention": {
+      "0.05": {
+        "sparse_gemm_ms": 0.03,
+        "gather_ms": 0.028,
+        "total_ms": 0.058,
+        "ratio_vs_dense": 0.0406
+      },
+      "0.1": {
+        "sparse_gemm_ms": 0.037,
+        "gather_ms": 0.028,
+        "total_ms": 0.065,
+        "ratio_vs_dense": 0.0453
+      },
+      "0.15": {
+        "sparse_gemm_ms": 0.048,
+        "gather_ms": 0.029,
+        "total_ms": 0.077,
+        "ratio_vs_dense": 0.054
+      },
+      "0.2": {
+        "sparse_gemm_ms": 0.059,
+        "gather_ms": 0.028,
+        "total_ms": 0.087,
+        "ratio_vs_dense": 0.061
+      },
+      "0.3": {
+        "sparse_gemm_ms": 0.085,
+        "gather_ms": 0.028,
+        "total_ms": 0.112,
+        "ratio_vs_dense": 0.0785
+      },
+      "0.5": {
+        "sparse_gemm_ms": 0.126,
+        "gather_ms": 0.029,
+        "total_ms": 0.155,
+        "ratio_vs_dense": 0.1081
+      }
+    },
+    "caveats": [
+      "same k blocks for all rows (row-specific gathers slower)",
+      "weight gather pre-applied; fused kernel needed in deployment"
+    ]
+  }
+}

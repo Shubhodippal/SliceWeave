@@ -1,0 +1,31 @@
+# Per-model configs (§72). Runtime values are auto-discovered; these pin the
+# stage plan and granularity knobs used by the experiment drivers.
+
+qwen4b:
+  hf_id: "Qwen/Qwen3-4B"        # Stage 1 development model (§6 Track 1)
+  device: "auto"
+  dtype: "bfloat16"
+  group_size: 128
+  notes: "runs locally: VRAM-first + RAM offload via device_map budgeting"
+
+qwen9b:
+  hf_id: "Qwen/Qwen3-9B"        # Stage 2 (placeholder id; §6 Track 2)
+  device: "auto"
+  dtype: "bfloat16"
+  group_size: 128
+  notes: "stress-test scaling; may need 4-bit locally"
+
+qwen27b:
+  hf_id: "Qwen/Qwen3.8-27B"     # Stage 3 PRIMARY TARGET (§5; placeholder id)
+  device: "auto"
+  dtype: "bfloat16"
+  group_size: 128
+  notes: "Kaggle bf16 preferred; local 4-bit NF4 fallback (6 GB VRAM)"
+
+# §32 mixed-precision plan for the eventual runtime (not the research phase)
+precision_plan:
+  sensitive_shared: "Q6/Q8 or fp16"
+  universal_core: "Q5/Q6"
+  conditional_experts: "Q4"
+  cold_blocks: "Q4"
+  router_metadata: "fp16/int32"

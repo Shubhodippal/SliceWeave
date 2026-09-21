@@ -1,0 +1,49 @@
+{
+  "comparison": [
+    {
+      "layer": "model.layers.7",
+      "contig76_meanH": 1.8564171573634962,
+      "clust76_meanH": 1.8638954094181173,
+      "clust76_frac_specialized": 0.0
+    },
+    {
+      "layer": "model.layers.18",
+      "contig76_meanH": 1.8543388608153872,
+      "clust76_meanH": 1.8691499487971381,
+      "clust76_frac_specialized": 0.0
+    },
+    {
+      "layer": "model.layers.29",
+      "contig76_meanH": 1.8393773926318773,
+      "clust76_meanH": 1.855952431894897,
+      "clust76_frac_specialized": 0.0
+    }
+  ],
+  "granularity_sweep": [
+    {
+      "k": 38,
+      "meanH": 1.83624805129988,
+      "frac_specialized": 0.0
+    },
+    {
+      "k": 76,
+      "meanH": 1.855952431894897,
+      "frac_specialized": 0.0
+    },
+    {
+      "k": 152,
+      "meanH": 1.8546797972627302,
+      "frac_specialized": 0.0
+    },
+    {
+      "k": 304,
+      "meanH": 1.8586989197278398,
+      "frac_specialized": 0.0
+    }
+  ],
+  "contribution_arm": {
+    "layer": "model.layers.29",
+    "meanH": 1.854320761477048,
+    "frac_specialized": 0.0
+  }
+}

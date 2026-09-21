@@ -1,0 +1,13 @@
+layer,k,n_clusters,size_min,size_max,intra_corr_mean
+model.layers.7,38,38,1,3166,0.087
+model.layers.7,76,76,1,3140,0.089
+model.layers.7,152,152,1,2566,0.113
+model.layers.7,304,304,1,1976,0.122
+model.layers.18,38,38,1,3571,0.109
+model.layers.18,76,76,1,3573,0.108
+model.layers.18,152,152,1,2022,0.150
+model.layers.18,304,304,1,1830,0.140
+model.layers.29,38,38,1,3471,0.107
+model.layers.29,76,76,1,5286,0.074
+model.layers.29,152,152,1,3160,0.111
+model.layers.29,304,304,1,3046,0.110

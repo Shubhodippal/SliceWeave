@@ -1,0 +1,4 @@
+group_size,n_experts,sum_equals_dense,permuted_equals_dense,rel_err_sum,rel_err_perm
+64,152,True,True,2.783e-07,0.000e+00
+128,76,True,True,2.281e-07,0.000e+00
+256,38,True,True,1.862e-07,0.000e+00

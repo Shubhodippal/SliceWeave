@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-20T17:41:26",
+  "input": "CORRECTED: MLP input (post-attention) vs M4's layer input",
+  "split": {
+    "frac": 0.7,
+    "seed": 0,
+    "discipline": "by-prompt"
+  },
+  "granularities": {
+    "128": {
+      "n_experts": 76,
+      "K": 19,
+      "knn_holdout_recall": 0.6124,
+      "static_holdout_recall": 0.5728,
+      "learned_margin_over_static": 0.0396,
+      "z_energy_posthoc_recall": 0.9449,
+      "gate_recall_ge_070": false,
+      "gate_margin_ge_005": false,
+      "passed": false
+    },
+    "256": {
+      "n_experts": 38,
+      "K": 10,
+      "knn_holdout_recall": 0.6427,
+      "static_holdout_recall": 0.6121,
+      "learned_margin_over_static": 0.0306,
+      "z_energy_posthoc_recall": 0.9483,
+      "gate_recall_ge_070": false,
+      "gate_margin_ge_005": false,
+      "passed": false
+    },
+    "512": {
+      "n_experts": 19,
+      "K": 5,
+      "knn_holdout_recall": 0.669,
+      "static_holdout_recall": 0.6531,
+      "learned_margin_over_static": 0.0159,
+      "z_energy_posthoc_recall": 0.9469,
+      "gate_recall_ge_070": false,
+      "gate_margin_ge_005": false,
+      "passed": false
+    }
+  },
+  "overall": "NULL CONFIRMED at every granularity \u2014 static prior dominates"
+}

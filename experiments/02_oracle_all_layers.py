@@ -1,4 +1,4 @@
-"""Experiment 02 — All-Layer Oracle Sweep (Blueprint §29, Milestone 2).
+"""Experiment 02 — All-Layer Oracle Sweep (§29, Milestone 1).
 
 For every layer, test multiple retention fractions at the last prompt token
 and produce a layer-sensitivity table + plot.

@@ -1,0 +1,283 @@
+{
+  "milestone": "M4 token router",
+  "date": "2026-09-20T17:00:16",
+  "model": "Qwen/Qwen3-4B",
+  "layers": [
+    "model.layers.7",
+    "model.layers.18",
+    "model.layers.29"
+  ],
+  "group_size": 128,
+  "n_experts": 76,
+  "K_list": [
+    8,
+    19,
+    30
+  ],
+  "K_gate": 19,
+  "split": {
+    "frac": 0.7,
+    "seed": 0,
+    "discipline": "by-prompt",
+    "n_train_prompts": 97,
+    "n_holdout_prompts": 41
+  },
+  "capture": {
+    "dir": "results/traces/m4_capture",
+    "files": 414,
+    "token_rows": 6207
+  },
+  "holdout_recall_at_19": {
+    "model.layers.7": {
+      "always_freq": 0.5212224108658744,
+      "random": 0.24836284259034683,
+      "centroid": 0.5075592206322257,
+      "knn": 0.5608375778155065,
+      "probe": 0.30867491308917455
+    },
+    "model.layers.18": {
+      "always_freq": 0.6521950036381275,
+      "random": 0.25159673376990865,
+      "centroid": 0.36874444174953513,
+      "knn": 0.6803298569003153,
+      "probe": 0.2979222249171315
+    },
+    "model.layers.29": {
+      "always_freq": 0.5449915110356537,
+      "random": 0.24812030075187963,
+      "centroid": 0.4604252566901123,
+      "knn": 0.5852534562211982,
+      "probe": 0.3370523081898294
+    }
+  },
+  "holdout_recall_at_8": {
+    "model.layers.7": {
+      "always_freq": 0.31240399385560674,
+      "random": 0.10675883256528418,
+      "centroid": 0.27246543778801846,
+      "knn": 0.37519201228878646,
+      "probe": 0.17031490015360984
+    },
+    "model.layers.18": {
+      "always_freq": 0.5829493087557603,
+      "random": 0.10291858678955453,
+      "centroid": 0.1251920122887865,
+      "knn": 0.6284562211981567,
+      "probe": 0.17127496159754224
+    },
+    "model.layers.29": {
+      "always_freq": 0.4191628264208909,
+      "random": 0.1077188940092166,
+      "centroid": 0.22331029185867896,
+      "knn": 0.47523041474654376,
+      "probe": 0.2171658986175115
+    }
+  },
+  "holdout_recall_at_30": {
+    "model.layers.7": {
+      "always_freq": 0.6504864311315924,
+      "random": 0.3942652329749104,
+      "centroid": 0.6370199692780337,
+      "knn": 0.6736303123399897,
+      "probe": 0.4415770609318996
+    },
+    "model.layers.18": {
+      "always_freq": 0.711111111111111,
+      "random": 0.3982590885816692,
+      "centroid": 0.5329237071172556,
+      "knn": 0.7302611367127496,
+      "probe": 0.44152585765489
+    },
+    "model.layers.29": {
+      "always_freq": 0.6286226318484384,
+      "random": 0.3962109575012801,
+      "centroid": 0.5722990271377368,
+      "knn": 0.6558627752176139,
+      "probe": 0.4530465949820788
+    }
+  },
+  "oracle_diagnostics": {
+    "model.layers.7": 9.903225806451612,
+    "model.layers.18": 12.391705069124423,
+    "model.layers.29": 10.35483870967742
+  },
+  "quality_proxy": {
+    "layer": "model.layers.18",
+    "rows": [
+      [
+        "oracle",
+        71,
+        0.9998346567153931,
+        0
+      ],
+      [
+        "knn",
+        71,
+        0.9998334646224976,
+        0
+      ],
+      [
+        "centroid",
+        71,
+        0.9998430609703064,
+        0
+      ],
+      [
+        "always_freq",
+        71,
+        0.9998300075531006,
+        0
+      ],
+      [
+        "random",
+        71,
+        0.9998283982276917,
+        0
+      ],
+      [
+        "oracle",
+        29,
+        0.999760627746582,
+        1
+      ],
+      [
+        "knn",
+        29,
+        0.9997732639312744,
+        1
+      ],
+      [
+        "centroid",
+        29,
+        0.9997447729110718,
+        1
+      ],
+      [
+        "always_freq",
+        29,
+        0.9997616410255432,
+        1
+      ],
+      [
+        "random",
+        29,
+        0.9997699856758118,
+        1
+      ],
+      [
+        "oracle",
+        20,
+        0.9999046325683594,
+        1
+      ],
+      [
+        "knn",
+        20,
+        0.9999427199363708,
+        1
+      ],
+      [
+        "centroid",
+        20,
+        0.9999493360519409,
+        1
+      ],
+      [
+        "always_freq",
+        20,
+        0.9999479651451111,
+        1
+      ],
+      [
+        "random",
+        20,
+        0.9999480843544006,
+        1
+      ],
+      [
+        "oracle",
+        19,
+        0.9999439716339111,
+        1
+      ],
+      [
+        "knn",
+        19,
+        0.9999456405639648,
+        1
+      ],
+      [
+        "centroid",
+        19,
+        0.999944806098938,
+        1
+      ],
+      [
+        "always_freq",
+        19,
+        0.9999450445175171,
+        1
+      ],
+      [
+        "random",
+        19,
+        0.9999446272850037,
+        1
+      ],
+      [
+        "oracle",
+        18,
+        0.9996719360351562,
+        1
+      ],
+      [
+        "knn",
+        18,
+        0.9996719360351562,
+        1
+      ],
+      [
+        "centroid",
+        18,
+        0.9996705651283264,
+        1
+      ],
+      [
+        "always_freq",
+        18,
+        0.9995607137680054,
+        1
+      ],
+      [
+        "random",
+        18,
+        0.9995551109313965,
+        1
+      ]
+    ],
+    "note": "flat at layer 18 (residual contribution small); proxy not discriminating at this depth"
+  },
+  "latency": {
+    "ffn_ms_batch64": 4.253,
+    "centroid_ms_batch64": 0.196,
+    "probe_ms_batch64": 0.116,
+    "ratio_centroid": 0.0461,
+    "ratio_probe": 0.0272
+  },
+  "gate": {
+    "K": 19,
+    "threshold": 0.7,
+    "knn_recall19_per_layer": [
+      "False",
+      "False",
+      "False"
+    ],
+    "passed": false,
+    "best_static_recall19": [
+      0.5212224108658744,
+      0.6521950036381275,
+      0.5449915110356537
+    ],
+    "static_beats_learned": true
+  }
+}
